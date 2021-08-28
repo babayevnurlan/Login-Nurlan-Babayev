@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(img/photo.jpg);
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login .name h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgb(40, 40, 143);
+  width: 110px;
+}
+
+.login input {
+  width: 240px;
+  height: 30px;
+  background: none;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid rgb(40, 40, 143);
+  color: #fff;
+}
+
+.login input::placeholder {
+  color: rgb(202, 180, 180);
+}
+
+input:invalid + span::before {
+  content: "✕";
+  color: rgb(182, 42, 17);
+}
+
+input:valid + span::before {
+  content: "✓";
+  color: rgb(1, 204, 1);
+}
+
+.login .login-submit {
+  color: #fff;
+  border: 2px solid rgb(40, 40, 143);
+}
+
+.login .login-submit:hover {
+  border: none;
+}
